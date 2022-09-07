@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>上高职</title>
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="./css/common.min.css" />
+	<link rel="stylesheet" href="./css/index.min.css" />
+	<link rel="stylesheet" href="./css/swiper.min.css" />
+</head>
+
+<body>
+	<button class="gotop">
+		<span>
+			<img src="./images/png/gotop.png" alt="返回顶部">
+		</span>
+	</button>
+	<header>
+		<div class="wrap">
+			<h1 class="logo">
+				<a href="./index.html">
+					<img src="./images/logo.png" alt="上高职" />
+					<strong class="display-n">上高职</strong>
+				</a>
+			</h1>
+			<nav>
+				<ul class="nav">
+					<li><a href="./index.html">首页</a></li>
+					<li>
+						<a href="./list-school.html">单招学校</a>
+						<ul class="head-dropdown">
+							<li><a href="#">单招学校</a></li>
+							<li><a href="#">单招学校</a></li>
+							<li><a href="#">单招学校</a></li>
+							<li><a href="#">单招学校</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="./list-specialty.html">高职专业</a>
+						<ul class="head-dropdown">
+							<li><a href="#">高职专业</a></li>
+							<li><a href="#">高职专业</a></li>
+							<li><a href="#">高职专业</a></li>
+							<li><a href="#">高职专业</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">考试信息</a>
+						<ul class="head-dropdown">
+							<li><a href="#">考试信息</a></li>
+							<li><a href="#">考试信息</a></li>
+							<li><a href="#">考试信息</a></li>
+							<li><a href="#">考试信息</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="./list-article.html">单招资讯</a>
+						<ul class="head-dropdown">
+							<li><a href="#">单招资讯</a></li>
+							<li><a href="#">单招资讯</a></li>
+							<li><a href="#">单招资讯</a></li>
+							<li><a href="#">单招资讯</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">院校动态</a>
+						<ul class="head-dropdown">
+							<li><a href="#">院校动态</a></li>
+							<li><a href="#">院校动态</a></li>
+							<li><a href="#">院校动态</a></li>
+							<li><a href="#">院校动态</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</nav>
+			<div class="search-box">
+				<div class="search model-box tooltip" data-tooltip="点击左侧下拉框有更多选择哦!">
+					<form id="schform" action="https://www.shanggaozhi.com.cn/e/search/index.php" method="post" autocomplete="off"
+						name="search">
+						<input type="hidden" value="title" name="show" />
+						<input class="tempid" name="tempid" value="1" type="hidden" />
+						<input class="classid" name="tbname" value="news" type="hidden" />
+						<div id="box" class="model-select-text">资讯</div>
+						<ul class="model-select-option">
+							<li data-option="news" data-tempid="1" class="data-selected">
+								资讯
+							</li>
+							<li data-option="school" data-tempid="3">学校</li>
+							<li data-option="specialty" data-tempid="2">专业</li>
+						</ul>
+						<input type="text" name="keyboard" id="keyboard" class="input-search" placeholder="请输入关键词" />
+						<button id="search-submit" type="submit" class="input-submit">
+							<span>
+								<img src="./images/png/search.png" alt="搜索" class="input-submit-img">
+							</span>
+						</button>
+					</form>
+				</div>
+				<div class="pop-search">
+					<div class="pop-search-title">热门搜索：</div>
+					<div class="pop-search-tags">
+						<a href="#" target="_blank">学校</a>
+						<a href="#" target="_blank">中专专业</a>
+						<a href="#" target="_blank">热门中职学校</a>
+						<a href="#" target="_blank">湖南中职学校</a>
+						<a href="#" target="_blank">女生专业</a>
+					</div>
+					<div class="pop-search-close">
+						<img src="./images/png/search.png" alt="搜索" class="input-submit-img">
+					</div>
+				</div>
+			</div>
+			<div class="zixun display-n">
+				<a href="#">在线咨询</a>
+			</div>
+			<div class="mobile-head">
+				<div class="mobile-search">
+					<!-- <svg id="ssearch" t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
+						<path
+							d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
+							fill="#444444" p-id="2117"></path>
+					</svg> -->
+					<img src="./images/png/ssearch.png" alt="搜索" id="ssearch">
+					<img src="./images/png/squit.png" alt="关闭" id="squit">
+					<!-- <svg id="squit" t="1646874676621" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="3496" width="64" height="64">
+						<path
+							d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+							p-id="3497"></path>
+					</svg> -->
+				</div>
+				<div class="mobile-menu">
+					<img src="./images/png/mmenu.png" alt="菜单" id="mmenu">
+					<!-- <svg id="mmenu" t="1646791475513" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="1709" width="64" height="64">
+						<path
+							d="M905.848832 706.56c22.84544 0 41.744384 18.75968 41.744384 41.603072 0 23.6032-18.898944 42.364928-41.744384 42.364928L301.010944 790.528c-22.833152 0-41.728-18.75968-41.728-42.364928 0-22.843392 18.896896-41.603072 41.728-41.603072L905.848832 706.56zM139.56096 215.488512c29.927424 0 53.557248 24.406016 53.557248 53.54496 0 29.927424-23.631872 53.559296-53.557248 53.559296C110.422016 322.592768 86.016 298.960896 86.016 269.033472 86.016 239.894528 110.422016 215.488512 139.56096 215.488512L139.56096 215.488512zM301.010944 317.44c-22.833152 0-41.728-19.13856-41.728-41.984s18.896896-41.984 41.728-41.984l604.837888 0c22.84544 0 41.744384 19.13856 41.744384 41.984s-18.898944 41.984-41.744384 41.984L301.010944 317.44zM301.010944 569.344c-22.833152 0-41.728-19.140608-41.728-41.984s18.896896-41.984 41.728-41.984l604.837888 0c22.84544 0 41.744384 19.140608 41.744384 41.984s-18.898944 41.984-41.744384 41.984L301.010944 569.344zM139.56096 458.835968c29.927424 0 53.557248 23.63392 53.557248 53.557248 0 29.140992-23.631872 53.557248-53.557248 53.557248C110.422016 565.950464 86.016 541.534208 86.016 512.393216 86.016 482.46784 110.422016 458.835968 139.56096 458.835968L139.56096 458.835968zM139.56096 701.407232c29.927424 0 53.557248 24.420352 53.557248 53.559296 0 29.925376-23.631872 53.54496-53.557248 53.54496C110.422016 808.511488 86.016 784.893952 86.016 754.968576 86.016 725.827584 110.422016 701.407232 139.56096 701.407232L139.56096 701.407232z"
+							p-id="1710"></path>
+					</svg> -->
+					<img src="./images/png/squit.png" alt="关闭" id="mquit">
+					<!-- <svg id="mquit" t="1646874676621" class="icon" viewBox="0 0 1024 1024" version="1.1"
+						xmlns="http://www.w3.org/2000/svg" p-id="3496" width="64" height="64">
+						<path
+							d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+							p-id="3497"></path>
+					</svg> -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="main-top wrap">
+			<div class="main-tleft">
+				<div class="main-tleft-title">
+					<span><img src="./images/png/hot-news.png" alt="高职头条" /></span>
+					<p class="display-n">高职头条</p>
+				</div>
+				<ul class="main-tleft-text">
+					<li>
+						<a href="#" alt="">
+							<span>1</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>2</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>3</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>4</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>5</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>6</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>7</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>8</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>9</span>
+							<p>我是文字文字文字文字字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<span>20</span>
+							<p>我是文字字文字文字文字文字文字文字文字</p>
+							<span>02-24</span>
+						</a>
+					</li>
+				</ul>
+				<span></span>
+			</div>
+			<div class="main-tcenter">
+				<div class="main-tcenter-top swiper swiper-container" id="swiper">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="">
+								<img src="images/banner/1.jpeg" alt="" />
+								<p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<img src="images/banner/2.jpg" alt="" />
+								<p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<img src="images/banner/3.jpg" alt="" />
+								<p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<img src="images/banner/4.jpeg" alt="" />
+								<p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="">
+								<img src="images/banner/5.jpeg" alt="" />
+								<p>2022年湖南省高职单招报考信息和考试内容以及报考政策汇总</p>
+							</a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="main-tcenter-bottom">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="./images/banner/banner1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/banner/banner2.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/banner/banner3.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/banner/banner4.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-tright">
+				<div class="main-tright-top">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide1.png" alt="学校排行" />
+								</div>
+								<p>学校排行</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide2.png" alt="热门专业" />
+								</div>
+								<p>热门专业</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide3.png" alt="录取分数线" />
+								</div>
+								<p>录取分数线</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide4.png" alt="考试科目" />
+								</div>
+								<p>考试科目</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main-tright-top">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide5.png" alt="新手指南" />
+								</div>
+								<p>新手指南</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide6.png" alt="备考心得" />
+								</div>
+								<p>备考心得</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide7.png" alt="面试技巧" />
+								</div>
+								<p>面试技巧</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="main-tright-ico">
+									<img src="./images/png/guide8.png" alt="成绩查询" />
+								</div>
+								<p>成绩查询</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main-tright-bottom">
+					<ul>
+						<li><a href="">湖南单招报名时间</a></li>
+						<li><a href="">湖南单招报名时间</a></li>
+						<li><a href="">湖南单招考试时间</a></li>
+						<li><a href="">湖南单招报名方式</a></li>
+						<li><a href="">高职单招和对口单招</a></li>
+						<li><a href="">高职单招和高考</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="school wrap">
+		<div class="school-title">
+			<h1>单招学校</h1>
+			<div class="tab" id="tab">
+				<div class="tab-default">最近更新</div>
+				<ul>
+					<li class="option option-border">最近更新</li>
+					<li class="option">热门学校</li>
+					<li class="option">省级重点</li>
+					<li class="option">国家重点</li>
+				</ul>
+			</div>
+		</div>
+		<div class="school-content">
+			<ul class="clearfix option-select-cont option-select-cont-show">
+				<li>
+					<a href="./content-school.html">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">
+								1111111111长沙商贸旅游职业技术学校
+							</div>
+							<div class="school-right-tags">
+								<span>大专中职部</span>
+								<span>国家重点</span>
+								<span>国家示范</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="clearfix option-select-cont">
+				<li>
+					<a href="./content-school.html">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">
+								2222222222长沙商贸旅游职业技术学校
+							</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="clearfix option-select-cont">
+				<li>
+					<a href="./content-school.html">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">
+								33333333长沙商贸旅游职业技术学校
+							</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="clearfix option-select-cont">
+				<li>
+					<a href="./content-school.html">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">
+								44444444长沙商贸旅游职业技术学校
+							</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="school-pic">
+							<img src="./images/school/school.png" alt="" />
+						</div>
+						<div class="school-right">
+							<div class="school-right-title">长沙商贸旅游职业技术学校</div>
+							<div class="school-right-tags">
+								<span>公办</span>
+								<span>国家重点</span>
+								<span>财商类</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="school-more">
+			<a href="#">点击查看湖南单招学校大全 >></a>
+		</div>
+	</div>
+	<div class="specialty wrap">
+		<div class="specialty-title">
+			<h1>高职专业</h1>
+			<div class="tab" id="tab">
+				<div class="tab-default">最近更新</div>
+				<ul>
+					<li class="option option-border">最近更新</li>
+					<li class="option">热门专业</li>
+					<li class="option">男生专业</li>
+					<li class="option">女生专业</li>
+				</ul>
+			</div>
+		</div>
+		<div class="specialty-content option-select-cont option-select-cont-show">
+			<ul>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							11111111111茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="specialty-content option-select-cont">
+			<ul>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							2222222222222222茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="specialty-content option-select-cont">
+			<ul>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							33333333333茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="specialty-content option-select-cont">
+			<ul>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							4444444444444茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="./content-specialty.html">
+						<div class="specialty-pic">
+							<img src="./images/specialty/specialty.png" alt="" />
+						</div>
+						<div class="specialty-content-title">
+							茶叶生产与加工茶叶生产与加工
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="specialty-more">
+			<a href="#">点击查看高职专业大全 >></a>
+		</div>
+	</div>
+	<article class="wrap">
+		<div class="list">
+			<div class="list-title">
+				<h1>最新阅读</h1>
+				<div class="tab" id="tab">
+					<div class="tab-default">考试信息</div>
+					<ul>
+						<li class="option option-border">考试信息</li>
+						<li class="option">单招资讯</li>
+						<li class="option">院校动态</li>
+					</ul>
+				</div>
+			</div>
+			<div class="list-content option-select-cont option-select-cont-show">
+				<ul>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic">
+											<img src="./images/icon/part1.png" alt="" />
+										</span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="list-content-more">
+					<a href="#">阅读更多资讯 >></a>
+				</div>
+			</div>
+			<div class="list-content option-select-cont">
+				<ul>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>22222222为什么越来越多的人选择单招考大学，你知道吗？</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="list-content-more">
+					<a href="#">阅读更多资讯 >></a>
+				</div>
+			</div>
+			<div class="list-content option-select-cont">
+				<ul>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									33333333333333为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./content-article.html">
+							<div><img src="./images/banner/2.jpg" alt="" /></div>
+							<div class="list-right">
+								<h2>
+									111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+								</h2>
+								<p>
+									于正在备于正在备
+									对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+								</p>
+								<div class="list-right-bottom">
+									<p>
+										<span class="list-right-pic"></span>
+										<span class="list-right-author">单招资讯</span>
+									</p>
+									<p>
+										<span class="list-time-ico"></span>
+										<span class="list-time">2022-02-28</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="list-content-more">
+					<a href="#">阅读更多资讯 >></a>
+				</div>
+			</div>
+		</div>
+		<div class="article-right">
+			<div class="school-rank">
+				<div class="school-rank-title">
+					<h1>学校排行</h1>
+					<div class="school-rank-more">
+						<a href="#">更多+</a>
+					</div>
+				</div>
+				<div class="school-rank-content">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>1</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>2</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>3</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>4</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学生职业学院生职业学院生职业学院院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>5</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>6</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>7</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<div class="school-rank-triangle">
+									<span>8</span>
+								</div>
+								<img src="./images/school/school.png" alt="" />
+								<p>长沙卫生职业学院</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="specialty-recommend">
+				<div class="specialty-recommend-title">
+					<h1>专业推荐</h1>
+					<div class="specialty-recommend-more">
+						<a href="#">更多+</a>
+					</div>
+				</div>
+				<div class="specialty-recommend-content">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="./images/specialty/specialty.png" alt="" />
+								<p>循环农业与再生资源利用</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/specialty/specialty.png" alt="" />
+								<p>循环农业与再生资源利用</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/specialty/specialty.png" alt="" />
+								<p>循环农业与再生资源利用</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/specialty/specialty.png" alt="" />
+								<p>循环农业与再生资源利用</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="./images/specialty/specialty.png" alt="" />
+								<p>循环农业与再生资源利用</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="popular">
+				<div class="popular-title">
+					<div class="popular-title-week option option-border-hot">
+						周热门
+					</div>
+					<div class="popular-title-moon option">月热门</div>
+					<div class="popular-title-total option">总热门</div>
+				</div>
+				<div class="popular-content">
+					<ul class="option-select-cont option-select-cont-show">
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">1</span>
+								<p>111111111111高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">2</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">3</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">4</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">5</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">6</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">7</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">8</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">9</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">10</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="option-select-cont">
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">1</span>
+								<p>222222222222222高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">2</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">3</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">4</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">5</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">6</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">7</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">8</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">9</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">10</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="option-select-cont">
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">1</span>
+								<p>33333333333333高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">2</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">3</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">4</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">5</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">6</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">7</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">8</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">9</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="popular-conten-num">10</span>
+								<p>高职自主招生的报考流程是什么？</p>
+								<span class="popular-conten-read">
+									阅读
+									<dd class="readnum">256</dd>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="footer wrap">
+			<div class="footer-top">
+				<div class="footer-ttop">
+					<div class="footer-title">合作网站</div>
+					<div class="footer-contact">
+						<span>
+							<a href="#" target="">
+								<svg t="1646792825896" class="icon" viewBox="0 0 1024 1024" version="1.1"
+									xmlns="http://www.w3.org/2000/svg" p-id="3305" width="64" height="64">
+									<path
+										d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z"
+										p-id="3306"></path>
+								</svg>
+							</a>
+						</span>
+						<span>
+							<a href="">
+								<svg t="1646792735612" class="icon" viewBox="0 0 1024 1024" version="1.1"
+									xmlns="http://www.w3.org/2000/svg" p-id="3164" width="64" height="64">
+									<path
+										d="M664.250054 368.541681c10.015098 0 19.892049 0.732687 29.67281 1.795902-26.647917-122.810047-159.358451-214.077703-310.826188-214.077703-169.353083 0-308.085774 114.232694-308.085774 259.274068 0 83.708494 46.165436 152.460344 123.281791 205.78483l-30.80868 91.730191 107.688651-53.455469c38.558178 7.53665 69.459978 15.308661 107.924012 15.308661 9.66308 0 19.230993-0.470721 28.752858-1.225921-6.025227-20.36584-9.521864-41.723264-9.521864-63.862493C402.328693 476.632491 517.908058 368.541681 664.250054 368.541681zM498.62897 285.87389c23.200398 0 38.557154 15.120372 38.557154 38.061874 0 22.846334-15.356756 38.156018-38.557154 38.156018-23.107277 0-46.260603-15.309684-46.260603-38.156018C452.368366 300.994262 475.522716 285.87389 498.62897 285.87389zM283.016307 362.090758c-23.107277 0-46.402843-15.309684-46.402843-38.156018 0-22.941502 23.295566-38.061874 46.402843-38.061874 23.081695 0 38.46301 15.120372 38.46301 38.061874C321.479317 346.782098 306.098002 362.090758 283.016307 362.090758zM945.448458 606.151333c0-121.888048-123.258255-221.236753-261.683954-221.236753-146.57838 0-262.015505 99.348706-262.015505 221.236753 0 122.06508 115.437126 221.200938 262.015505 221.200938 30.66644 0 61.617359-7.609305 92.423993-15.262612l84.513836 45.786813-23.178909-76.17082C899.379213 735.776599 945.448458 674.90216 945.448458 606.151333zM598.803483 567.994292c-15.332197 0-30.807656-15.096836-30.807656-30.501688 0-15.190981 15.47546-30.477129 30.807656-30.477129 23.295566 0 38.558178 15.286148 38.558178 30.477129C637.361661 552.897456 622.099049 567.994292 598.803483 567.994292zM768.25071 567.994292c-15.213493 0-30.594809-15.096836-30.594809-30.501688 0-15.190981 15.381315-30.477129 30.594809-30.477129 23.107277 0 38.558178 15.286148 38.558178 30.477129C806.808888 552.897456 791.357987 567.994292 768.25071 567.994292z"
+										p-id="3165"></path>
+								</svg>
+							</a>
+						</span>
+						<span>
+							<a href="">
+								<svg t="1646792840095" class="icon" viewBox="0 0 1024 1024" version="1.1"
+									xmlns="http://www.w3.org/2000/svg" p-id="3446" width="64" height="64">
+									<path
+										d="M937.4 423.9c-84 0-165.7-27.3-232.9-77.8v352.3c0 179.9-138.6 325.6-309.6 325.6S85.3 878.3 85.3 698.4c0-179.9 138.6-325.6 309.6-325.6 17.1 0 33.7 1.5 49.9 4.3v186.6c-15.5-6.1-32-9.2-48.6-9.2-76.3 0-138.2 65-138.2 145.3 0 80.2 61.9 145.3 138.2 145.3 76.2 0 138.1-65.1 138.1-145.3V0H707c0 134.5 103.7 243.5 231.6 243.5v180.3l-1.2 0.1"
+										p-id="3447"></path>
+								</svg>
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="#">上职校网</a></li>
+						<li><a href="#">上高职网</a></li>
+						<li><a href="#">长沙中职招生网</a></li>
+						<li><a href="#">淘学校</a></li>
+						<li><a href="#">三省教育</a></li>
+						<li><a href="#">爱尚大学</a></li>
+						<li><a href="#">帮学网</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="copyright">
+					<p>版权所有©2021- 2022</p>
+					<a href="#">
+						<p>湖南三省教育咨询有限公司(sansheng8.com)</p>
+					</a>
+					<p>All Rights Reserved</p>
+				</div>
+				<div class="filing">
+					<a href="https://beian.miit.gov.cn/">
+						<p>备案号： 湘ICP备2021020565号-2</p>
+						<p>湘公网安备 43010202000522号</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/index.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			autoplay: {
+				delay: 25033330,
+				disableOnInteraction: false,
+			},
+		})
+		mySwiper.el.onmouseover = function () {
+			mySwiper.autoplay.stop()
+		}
+		mySwiper.el.onmouseout = function () {
+			mySwiper.autoplay.start()
+		}
+	</script>
+</body>
+
+</html>

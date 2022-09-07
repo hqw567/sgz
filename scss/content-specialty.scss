@@ -1,0 +1,415 @@
+.head-specialty {
+	padding: 20px 22px 20px 22px;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	img {
+		width: 243px;
+		height: 141px;
+		border-radius: 7px;
+	}
+}
+
+.head-specialty-content {
+	margin: 0 0px 0 20px;
+}
+
+.head-specialty-title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+
+	h1 {
+		font-size: 28px;
+		font-weight: 700;
+		color: #101010;
+		margin-right: 28px;
+		white-space: nowrap;
+	}
+
+	div {
+		span {
+			margin-right: 15px;
+			display: inline-block;
+			padding: 2px 10px;
+			border: 1px solid #02a297;
+			border-radius: 50px;
+			color: #02a297;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.head-specialty-code,
+.head-specialty-job,
+.head-specialty-secondary,
+.head-specialty-nndergraduate {
+	span {
+		color: #757373;
+		font-size: 14px;
+
+		&:first-child {
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+
+			margin-right: 5px;
+			margin-bottom: -3px;
+			background-image: url(../images/png/code.png);
+			background-size: 100% 100%;
+		}
+
+		margin-top: 6px;
+	}
+}
+
+.head-specialty-job span:first-child {
+	background-image: url(../images/png/job.png);
+}
+
+.head-specialty-secondary span:first-child {
+	background-image: url(../images/png/secondary.png);
+}
+
+.head-specialty-nndergraduate span:first-child {
+	background-image: url(../images/png/nndergraduate.png);
+}
+
+.head-specialty-keifu {
+	position: absolute;
+	right: 50px;
+	a {
+		width: 127px;
+		height: 35px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: #02a297;
+		color: #fff;
+		font-size: 18px;
+		border-radius: 50px;
+
+		span {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background-image: url(../images/png/service.png);
+			background-size: 100% 100%;
+		}
+	}
+}
+
+.main-specialty {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
+	.main-specialty-left {
+		background-color: #fff;
+		width: 826px;
+		box-sizing: border-box;
+		padding: 20px;
+
+		h1 {
+			position: relative;
+			font-size: 20px;
+			color: #3b3b3b;
+			font-weight: 700;
+			padding-bottom: 10px;
+			width: 120px;
+
+			&::after {
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 100%;
+				content: "";
+				border-bottom: 2px solid #02a297;
+			}
+		}
+	}
+
+	.main-content {
+		border-top: 2px solid #e1dfdf;
+
+		p {
+			font-size: 16px;
+			color: #3b3b3b;
+			margin: 10px 0;
+			text-align: justify;
+			line-height: 30px;
+		}
+
+		.main-tit {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			span {
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				background-color: #02a297;
+				color: #fff;
+				font-size: 16px;
+				margin-right: 8px;
+			}
+
+			strong {
+				font-size: 18px;
+				font-weight: 700;
+				color: #02a297;
+				background-color: #fff;
+				position: relative;
+				padding-right: 10px;
+				z-index: 1;
+			}
+
+			&::after {
+				position: absolute;
+				right: 0px;
+				bottom: 44%;
+				content: "";
+				width: 88%;
+				border: 1px dashed #e1dfdf;
+			}
+		}
+	}
+}
+
+.main-specialty-right {
+	& > div {
+		margin-top: 20px;
+	}
+	& > div:first-child {
+		margin-top: 0;
+	}
+	width: 352px;
+	box-sizing: border-box;
+}
+
+.main-specialty .main-right-school {
+	padding: 20px 15px 20px 15px;
+	background-color: #fff;
+
+	h1 {
+		.tit {
+			width: 121px;
+		}
+	}
+}
+
+/*1100分辨率（大于960px，小于1199px）*/
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+}
+
+/*880分辨率（大于768px，小于959px）*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/*720分辨率（大于480px，小于767px）*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/*440分辨率以下（小于479px）*/
+@media only screen and (min-width: 320px) and(max-width: 479px) {
+	.nav-path {
+		margin-top: 65px;
+		margin-bottom: 20px;
+	}
+
+	.head-specialty {
+		margin: 0 20px;
+		padding: 15px 10px;
+		box-sizing: border-box;
+		background-color: #fff;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		align-items: center;
+		border-radius: 7px;
+		position: relative;
+
+		img {
+			width: 33%;
+			height: auto;
+			border-radius: 7px;
+		}
+	}
+
+	.head-specialty-content {
+		margin: 0;
+		width: 100%;
+	}
+
+	.head-specialty-title {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 0px;
+		position: absolute;
+		top: 7.6%;
+		right: 3%;
+		width: 60%;
+
+		h1 {
+			font-size: 18px;
+			font-weight: 700;
+			color: #101010;
+			margin-right: 0px;
+			margin-bottom: 5px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			width: 100%;
+			height: 20px;
+			overflow: hidden;
+		}
+
+		div {
+			height: 22px;
+			overflow: hidden;
+
+			span {
+				margin-right: 3px;
+				display: inline-block;
+				padding: 1px 8px;
+				border: 1px solid #02a297;
+				border-radius: 50px;
+				color: #02a297;
+				white-space: nowrap;
+				margin-bottom: 5px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.head-specialty-code,
+	.head-specialty-job,
+	.head-specialty-secondary,
+	.head-specialty-nndergraduate {
+		margin-top: 6px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		span {
+			color: #757373;
+			font-size: 14px;
+
+			&:first-child {
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				margin-right: 5px;
+				margin-bottom: -3px;
+			}
+		}
+	}
+
+	.head-specialty-code {
+		width: 100%;
+		border-top: 1px dotted #bbb;
+		margin-top: 12px;
+		padding-top: 5px;
+	}
+
+	.head-specialty-keifu {
+		position: static;
+		width: 100%;
+		padding-top: 12px;
+		margin-top: 10px;
+		border-top: 1px dotted #bbb;
+
+		a {
+			width: 100%;
+			height: auto;
+			padding: 1% 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #02a297;
+			color: #fff;
+			font-size: 14px;
+			border-radius: 50px;
+
+			span {
+				display: inline-block;
+				margin-right: 5px;
+				width: 18px;
+				height: 18px;
+				background-image: url(../images/png/service.png);
+				background-size: 100% 100%;
+			}
+		}
+	}
+
+	.main-specialty {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.main-specialty-left {
+			background-color: #fff;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 20px;
+
+			h1 {
+				position: relative;
+				font-size: 18px;
+				color: #3b3b3b;
+				font-weight: 700;
+				padding-bottom: 10px;
+				width: 108px;
+				white-space: nowrap;
+				&::after {
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					width: 100%;
+					content: "";
+					border-bottom: 2px solid #02a297;
+				}
+			}
+		}
+
+		.main-content {
+			border-top: 2px solid #e1dfdf;
+
+			p {
+				font-size: 16px;
+				color: #3b3b3b;
+				margin: 10px 0;
+				text-align: justify;
+				line-height: 25px;
+			}
+		}
+	}
+
+	.main-specialty-right {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.main-specialty .main-right-school {
+		margin-top: 20px;
+		padding: 20px;
+		background-color: #fff;
+
+		h1 {
+			.tit {
+				width: 109px;
+			}
+		}
+	}
+}

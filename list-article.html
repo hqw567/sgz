@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>文章列表页</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/common.min.css" />
+  <link rel="stylesheet" href="./css/list-article.min.css" />
+</head>
+
+<body>
+  <button class="gotop">
+    <span>
+      <svg t="1646706450166" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="2091" width="40" height="40">
+        <path
+          d="M512 370.9c-22 0-39.9 17.9-39.9 40 0 22 17.9 39.9 39.9 39.9s39.9-17.9 39.9-39.9c0-22.1-17.9-40-39.9-40z m0 64.2c-13.3 0-24.2-10.8-24.2-24.2s10.8-24.2 24.2-24.2c13.3 0 24.2 10.8 24.2 24.2s-10.9 24.2-24.2 24.2z"
+          fill="#02a297" p-id="2092"></path>
+        <path
+          d="M646.2 210.3C626.2 175.9 557.5 64 511.5 64c-45.9 0-114.4 112-134.3 146.3-33.6 57.9-91.4 174.3-106.9 309.9-40.5 58.8-61.9 126.7-61.9 196.8 0 60.3 16.3 120.3 47.3 173.3 5.6 9.7 16 15.6 27.2 15.6s21.6-6 27.2-15.7c14.7-25.3 33.6-45.9 57.4-62.4 26.8 23.5 57.1 40.1 89.4 48.9v51.7c0 17.4 14.1 31.5 31.5 31.5h47.2c17.4 0 31.5-14.1 31.5-31.5v-51.7c32.3-8.9 62.6-25.5 89.4-48.9 23.8 16.5 42.7 37 57.5 62.4 5.6 9.7 16 15.7 27.2 15.7s21.6-6 27.2-15.6c30.9-53.1 47.2-113 47.2-173.3 0-70.1-21.4-138-62-196.8-15.5-135.7-73.7-252-107.4-309.9zM535.6 681.2h-47.2c-4.4 0-7.9 3.5-7.9 7.9V842c-99.2-19.3-174.9-127.1-174.9-253.5 0-133.1 48.1-256.6 98.1-345.7h216.1c50.3 89.1 98.6 212.5 98.6 345.7 0 126.4-75.7 234.2-174.9 253.5V689.1c0-4.4-3.5-7.9-7.9-7.9z m-7.9 15.7v223.7h-31.5V696.9h31.5zM290.5 562c-0.4 8.8-0.7 17.6-0.7 26.5 0 77.1 27 147.7 70.2 197.8-31.3 18.7-57.2 42.8-76.9 72.6C260 814.8 247.7 766 247.8 717c0-54.5 14.8-107.5 42.7-155z m220.9-458.7c10.9 1.6 54.8 48.6 99.3 123.7h-198c44.4-75 87.9-122.1 98.7-123.7z m222.7 485.2c0-8.9-0.2-17.8-0.7-26.5 28 47.5 42.8 100.5 42.8 155 0 49-12.2 97.8-35.4 141.9-19.7-29.8-45.7-54-77-72.7 43.2-50 70.3-120.6 70.3-197.7z"
+          fill="#02a297" p-id="2093"></path>
+      </svg>
+    </span>
+  </button>
+  <header>
+    <div class="wrap">
+      <h1 class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="上高职" />
+          <strong class="display-n">上高职</strong>
+        </a>
+      </h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="./index.html">首页</a></li>
+          <li>
+            <a href="./list-school.html">单招学校</a>
+            <ul class="head-dropdown">
+              <li><a href="#">单招学校</a></li>
+              <li><a href="#">单招学校</a></li>
+              <li><a href="#">单招学校</a></li>
+              <li><a href="#">单招学校</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./list-specialty.html">高职专业</a>
+            <ul class="head-dropdown">
+              <li><a href="#">高职专业</a></li>
+              <li><a href="#">高职专业</a></li>
+              <li><a href="#">高职专业</a></li>
+              <li><a href="#">高职专业</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">考试信息</a>
+            <ul class="head-dropdown">
+              <li><a href="#">考试信息</a></li>
+              <li><a href="#">考试信息</a></li>
+              <li><a href="#">考试信息</a></li>
+              <li><a href="#">考试信息</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./list-article.html">单招资讯</a>
+            <ul class="head-dropdown">
+              <li><a href="#">单招资讯</a></li>
+              <li><a href="#">单招资讯</a></li>
+              <li><a href="#">单招资讯</a></li>
+              <li><a href="#">单招资讯</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">院校动态</a>
+            <ul class="head-dropdown">
+              <li><a href="#">院校动态</a></li>
+              <li><a href="#">院校动态</a></li>
+              <li><a href="#">院校动态</a></li>
+              <li><a href="#">院校动态</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-box">
+        <div class="search model-box">
+          <form action="https://www.shangzhixiao.com/e/search/index.php" target="_blank" method="post" name="schform"
+            id="schform" autocomplete="off">
+            <input type="hidden" value="title,skey" name="show" />
+            <input class="tempid" name="tempid" value="1" type="hidden" />
+            <input class="classid" name="classid" value="4,9,10,11,12" type="hidden" />
+            <div id="box" class="model-select-text" data-value="4,9,10,11,12">
+              资讯
+            </div>
+            <ul class="model-select-option">
+              <li data-option="4,9,10,11,12" class="data-selected">资讯</li>
+              <li data-option="7">学校</li>
+              <li data-option="5">专业</li>
+            </ul>
+            <input name="keyboard" type="text" id="keyboard" class="input-search" value="" placeholder="请输入关键词" />
+            <button id="search-submit" type="submit" class="input-submit" name="submit">
+              <span><svg t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
+                  <path
+                    d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
+                    fill="#444444" p-id="2117"></path>
+                </svg></span>
+            </button>
+          </form>
+        </div>
+        <div class="pop-search">
+          <div class="pop-search-title">热门搜索：</div>
+          <div class="pop-search-tags">
+            <a href="#" target="_blank">学校</a>
+            <a href="#" target="_blank">中专专业</a>
+            <a href="#" target="_blank">热门中职学校</a>
+            <a href="#" target="_blank">湖南中职学校</a>
+            <a href="#" target="_blank">女生专业</a>
+          </div>
+          <div class="pop-search-close">
+            <svg t="1646880684362" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="4299" width="128" height="128">
+              <path
+                d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+                p-id="4300"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="zixun">
+        <a href="#">在线咨询</a>
+      </div>
+      <div class="mobile-head">
+        <div class="mobile-search">
+          <svg id="ssearch" t="1646791607394" class="icon" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="2116" width="64" height="64">
+            <path
+              d="M469.333333 768c-166.4 0-298.666667-132.266667-298.666666-298.666667s132.266667-298.666667 298.666666-298.666666 298.666667 132.266667 298.666667 298.666666-132.266667 298.666667-298.666667 298.666667z m0-85.333333c119.466667 0 213.333333-93.866667 213.333334-213.333334s-93.866667-213.333333-213.333334-213.333333-213.333333 93.866667-213.333333 213.333333 93.866667 213.333333 213.333333 213.333334z m251.733334 0l119.466666 119.466666-59.733333 59.733334-119.466667-119.466667 59.733334-59.733333z"
+              fill="#444444" p-id="2117"></path>
+          </svg>
+          <svg id="squit" t="1646874676621" class="icon" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="3496" width="64" height="64">
+            <path
+              d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+              p-id="3497"></path>
+          </svg>
+        </div>
+        <div class="mobile-menu">
+          <svg id="mmenu" t="1646791475513" class="icon" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="1709" width="64" height="64">
+            <path
+              d="M905.848832 706.56c22.84544 0 41.744384 18.75968 41.744384 41.603072 0 23.6032-18.898944 42.364928-41.744384 42.364928L301.010944 790.528c-22.833152 0-41.728-18.75968-41.728-42.364928 0-22.843392 18.896896-41.603072 41.728-41.603072L905.848832 706.56zM139.56096 215.488512c29.927424 0 53.557248 24.406016 53.557248 53.54496 0 29.927424-23.631872 53.559296-53.557248 53.559296C110.422016 322.592768 86.016 298.960896 86.016 269.033472 86.016 239.894528 110.422016 215.488512 139.56096 215.488512L139.56096 215.488512zM301.010944 317.44c-22.833152 0-41.728-19.13856-41.728-41.984s18.896896-41.984 41.728-41.984l604.837888 0c22.84544 0 41.744384 19.13856 41.744384 41.984s-18.898944 41.984-41.744384 41.984L301.010944 317.44zM301.010944 569.344c-22.833152 0-41.728-19.140608-41.728-41.984s18.896896-41.984 41.728-41.984l604.837888 0c22.84544 0 41.744384 19.140608 41.744384 41.984s-18.898944 41.984-41.744384 41.984L301.010944 569.344zM139.56096 458.835968c29.927424 0 53.557248 23.63392 53.557248 53.557248 0 29.140992-23.631872 53.557248-53.557248 53.557248C110.422016 565.950464 86.016 541.534208 86.016 512.393216 86.016 482.46784 110.422016 458.835968 139.56096 458.835968L139.56096 458.835968zM139.56096 701.407232c29.927424 0 53.557248 24.420352 53.557248 53.559296 0 29.925376-23.631872 53.54496-53.557248 53.54496C110.422016 808.511488 86.016 784.893952 86.016 754.968576 86.016 725.827584 110.422016 701.407232 139.56096 701.407232L139.56096 701.407232z"
+              p-id="1710"></path>
+          </svg>
+          <svg id="mquit" t="1646874676621" class="icon" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="3496" width="64" height="64">
+            <path
+              d="M512 451.669333l211.2-211.2 60.330667 60.330667-211.2 211.2 211.2 211.2-60.330667 60.330667-211.2-211.2-211.2 211.2-60.330667-60.330667 211.2-211.2-211.2-211.2L300.8 240.469333z"
+              p-id="3497"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="nav-path wrap">
+    <div class="nav-path-ico"></div>
+    <a href="#">上高职网</a>
+    >
+    <a href="#">考试信息</a>
+  </div>
+  <div class="article-list wrap">
+    <div class="list">
+      <div class="list-title">
+        <h1>考试信息</h1>
+        <div class="tab" id="tab">
+          <div class="tab-default">考试信息</div>
+          <ul>
+            <li class="option option-border">考试信息</li>
+            <li class="option">单招资讯</li>
+            <li class="option">院校动态</li>
+          </ul>
+        </div>
+      </div>
+      <div class="list-content option-select-cont option-select-cont-show">
+        <ul>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-page">
+          <div class="nav-page-top">
+            <a href="#" class="nav-page-first">首页</a>
+            <a href="#" class="nav-page-pre">上一页</a>
+
+            <a href="#" class="nav-page-next">下一页</a>
+            <a href="#" class="nav-page-last">尾页</a>
+            <span>转到：
+              <select name="select" id="nav-page-select">
+                <option value="" selected>第 1 页</option>
+                <option value="">第 2 页</option>
+                <option value="">第 3 页</option>
+                <option value="">第 4 页</option>
+                <option value="">第 5 页</option>
+                <option value="">第 6 页</option>
+              </select>
+            </span>
+          </div>
+          <div class="nav-page-bottom">
+            <span>页次：1/3</span>
+            <span>每页：25</span>
+            <span>总数：55</span>
+          </div>
+        </div>
+      </div>
+      <div class="list-content option-select-cont">
+        <ul>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  222222222222222为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-page">
+          <a href="#" class="nav-page-pre">上一页</a>
+          <a href="#" class="nav-page-first">首页</a>
+          <span>
+            <a href="#">1</a>
+            <a href="#">2</a>
+          </span>
+          <a href="#" class="nav-page-last">末页</a>
+          <a href="#" class="nav-page-next">下一页</a>
+        </div>
+      </div>
+      <div class="list-content option-select-cont">
+        <ul>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  333333333333333为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="./content-article.html">
+              <div class="list-left">
+                <img src="./images/banner/2.jpg" alt="" />
+              </div>
+              <div class="list-right">
+                <h2>
+                  111111111111111为什么越来越多的人选择单招考大学，你知道吗？
+                </h2>
+                <p>
+                  于正在备于正在备
+                  对于正在备考2022年单招的同学来说，这条路上一定面临着很多的困难与挑战，我们也难免会陷入低谷，但往往在这个时候，就一定要有自己的处理办法，因为
+                </p>
+                <div class="list-right-bottom">
+                  <p>
+                    <span class="list-right-pic"></span><span class="list-right-author">单招资讯</span>
+                  </p>
+                  <p>
+                    <span class="list-time-ico"></span><span class="list-time">2022-02-28</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-page">
+          <a href="#" class="nav-page-pre">上一页</a>
+          <a href="#" class="nav-page-first">首页</a>
+          <span>
+            <a href="#">1</a>
+            <a href="#">2</a>
+          </span>
+          <a href="#" class="nav-page-last">末页</a>
+          <a href="#" class="nav-page-next">下一页</a>
+        </div>
+      </div>
+    </div>
+    <div class="article-right">
+      <div class="main-right-trend">
+        <h1>
+          <p class="tit">推荐阅读</p><span class="more"><a href="/xuexiao/rmxx/" target="_blank">更多+</a></span>
+        </h1>
+        <div class="main-right-trend-content">
+          <ul>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="./images/specialty/specialty.png" alt="" />
+                </div>
+                <div>
+                  <p>单招升学是利大于弊还是弊大于利？</p>
+                  <span>2022-02-24</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-right-school">
+        <h1>
+          <p class="tit">热门院校</p><span class="more"><a href="/xuexiao/rmxx/" target="_blank">更多+</a></span>
+        </h1>
+        <div class="main-right-school-content">
+          <ul>
+            <li>
+              <a href="#">
+                <div><img src="./images/school/school.png" alt="" /></div>
+                <div class="main-right-school-title">
+                  <p>旅游职业技术学院</p>
+                  <p>
+                    <span>公办</span><span>国家重点</span><span>财商类</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-right-specialty">
+        <h1>
+          <p class="tit">热门专业</p><span class="more"><a href="/xuexiao/rmxx/" target="_blank">更多+</a></span>
+        </h1>
+        <div class="main-right-specialty-content">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/specialty/specialty.png" alt="" />
+                <p>茶叶生产生</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/specialty/specialty.png" alt="" />
+                <p>茶叶生产生</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/specialty/specialty.png" alt="" />
+                <p>茶叶生产生</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/specialty/specialty.png" alt="" />
+                <p>茶叶生产生</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer wrap">
+      <div class="footer-top">
+        <div class="footer-ttop">
+          <div class="footer-title">合作网站</div>
+          <div class="footer-contact">
+            <span><a href="#" target="">
+                <svg t="1646792825896" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="3305" width="64" height="64">
+                  <path
+                    d="M824.8 613.2c-16-51.4-34.4-94.6-62.7-165.3C766.5 262.2 689.3 112 511.5 112 331.7 112 256.2 265.2 261 447.9c-28.4 70.8-46.7 113.7-62.7 165.3-34 109.5-23 154.8-14.6 155.8 18 2.2 70.1-82.4 70.1-82.4 0 49 25.2 112.9 79.8 159-26.4 8.1-85.7 29.9-71.6 53.8 11.4 19.3 196.2 12.3 249.5 6.3 53.3 6 238.1 13 249.5-6.3 14.1-23.8-45.3-45.7-71.6-53.8 54.6-46.2 79.8-110.1 79.8-159 0 0 52.1 84.6 70.1 82.4 8.5-1.1 19.5-46.4-14.5-155.8z"
+                    p-id="3306"></path>
+                </svg> </a></span>
+            <span><a href="">
+                <svg t="1646792735612" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="3164" width="64" height="64">
+                  <path
+                    d="M664.250054 368.541681c10.015098 0 19.892049 0.732687 29.67281 1.795902-26.647917-122.810047-159.358451-214.077703-310.826188-214.077703-169.353083 0-308.085774 114.232694-308.085774 259.274068 0 83.708494 46.165436 152.460344 123.281791 205.78483l-30.80868 91.730191 107.688651-53.455469c38.558178 7.53665 69.459978 15.308661 107.924012 15.308661 9.66308 0 19.230993-0.470721 28.752858-1.225921-6.025227-20.36584-9.521864-41.723264-9.521864-63.862493C402.328693 476.632491 517.908058 368.541681 664.250054 368.541681zM498.62897 285.87389c23.200398 0 38.557154 15.120372 38.557154 38.061874 0 22.846334-15.356756 38.156018-38.557154 38.156018-23.107277 0-46.260603-15.309684-46.260603-38.156018C452.368366 300.994262 475.522716 285.87389 498.62897 285.87389zM283.016307 362.090758c-23.107277 0-46.402843-15.309684-46.402843-38.156018 0-22.941502 23.295566-38.061874 46.402843-38.061874 23.081695 0 38.46301 15.120372 38.46301 38.061874C321.479317 346.782098 306.098002 362.090758 283.016307 362.090758zM945.448458 606.151333c0-121.888048-123.258255-221.236753-261.683954-221.236753-146.57838 0-262.015505 99.348706-262.015505 221.236753 0 122.06508 115.437126 221.200938 262.015505 221.200938 30.66644 0 61.617359-7.609305 92.423993-15.262612l84.513836 45.786813-23.178909-76.17082C899.379213 735.776599 945.448458 674.90216 945.448458 606.151333zM598.803483 567.994292c-15.332197 0-30.807656-15.096836-30.807656-30.501688 0-15.190981 15.47546-30.477129 30.807656-30.477129 23.295566 0 38.558178 15.286148 38.558178 30.477129C637.361661 552.897456 622.099049 567.994292 598.803483 567.994292zM768.25071 567.994292c-15.213493 0-30.594809-15.096836-30.594809-30.501688 0-15.190981 15.381315-30.477129 30.594809-30.477129 23.107277 0 38.558178 15.286148 38.558178 30.477129C806.808888 552.897456 791.357987 567.994292 768.25071 567.994292z"
+                    p-id="3165"></path>
+                </svg> </a></span>
+            <span><a href="">
+                <svg t="1646792840095" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="3446" width="64" height="64">
+                  <path
+                    d="M937.4 423.9c-84 0-165.7-27.3-232.9-77.8v352.3c0 179.9-138.6 325.6-309.6 325.6S85.3 878.3 85.3 698.4c0-179.9 138.6-325.6 309.6-325.6 17.1 0 33.7 1.5 49.9 4.3v186.6c-15.5-6.1-32-9.2-48.6-9.2-76.3 0-138.2 65-138.2 145.3 0 80.2 61.9 145.3 138.2 145.3 76.2 0 138.1-65.1 138.1-145.3V0H707c0 134.5 103.7 243.5 231.6 243.5v180.3l-1.2 0.1"
+                    p-id="3447"></path>
+                </svg> </a></span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">上职校网</a></li>
+            <li><a href="#">上高职网</a></li>
+            <li><a href="#">长沙中职招生网</a></li>
+            <li><a href="#">淘学校</a></li>
+            <li><a href="#">三省教育</a></li>
+            <li><a href="#">爱尚大学</a></li>
+            <li><a href="#">帮学网</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>版权所有©2021- 2022</p>
+          <a href="#">
+            <p>湖南三省教育咨询有限公司(sansheng8.com)</p>
+          </a>
+          <p>All Rights Reserved</p>
+        </div>
+        <div class="filing">
+          <a href="https://beian.miit.gov.cn/">
+            <p>备案号： 湘ICP备2021020565号-2</p>
+            <p>湘公网安备 43010202000522号</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
